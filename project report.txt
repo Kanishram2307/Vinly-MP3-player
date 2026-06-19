@@ -1,0 +1,119 @@
+VINYL – Android Music Player Application
+Project Report
+Submitted By
+Kanishram S
+Bachelor of Engineering – Electrical and Electronics Engineering
+
+Abstract:
+VINYL is a minimal black-themed Android music player developed using Python, Kivy, and KivyMD. The application enables users to play audio files stored on their devices while providing a clean and modern user interface. The application supports file and folder selection, playback controls, shuffle mode, loop mode, monthly listening statistics, and audio output device detection.
+The main objective of this project is to create a lightweight and user-friendly music player that offers essential playback features along with personalized listening insights similar to modern streaming applications.
+
+Chapter 1: Introduction
+Music players are among the most frequently used mobile applications. Many existing music players include unnecessary features that consume storage and system resources. VINYL was developed to provide a lightweight and efficient alternative with a clean user experience.
+The application allows users to access locally stored music files and manage playback with simple controls. It also records listening history and generates monthly summaries of frequently played tracks.
+
+Chapter 2: Objectives
+The objectives of the project are:
+Develop a lightweight Android music player.
+Provide playback controls such as Play, Pause, Next, and Previous.
+Implement Shuffle and Loop functionalities.
+Allow users to select music files and folders.
+Generate monthly listening statistics.
+Detect connected audio output devices.
+Provide an attractive black-themed user interface.
+
+Chapter 3: System Requirements
+Hardware Requirements
+Android Smartphone
+Minimum 2 GB RAM
+Internal Storage: 100 MB free space
+Software Requirements
+Python 3.x
+Kivy Framework
+KivyMD Library
+SQLite Database
+Buildozer
+Android SDK
+
+Chapter 4: System Architecture
+The system consists of the following modules:
+User Interface Module
+Provides buttons and controls for music playback.
+File Manager Module
+Allows users to select music files or folders from device storage.
+Audio Playback Module
+Loads and plays audio files using Kivy's SoundLoader.
+Statistics Module
+Stores playback history in SQLite and generates monthly listening reports.
+Audio Detection Module
+Identifies connected output devices such as headphones and Bluetooth speakers.
+
+Chapter 5: Methodology
+User selects a file or folder.
+Application scans supported audio formats.
+Playlist is generated.
+Selected song is loaded.
+User controls playback through UI buttons.
+Playback history is stored in SQLite database.
+Monthly statistics are generated from stored data.
+
+Chapter 6: Features
+Music Playback
+Play
+Pause
+Previous
+Next
+Playlist Management
+Single file selection
+Folder selection
+Playback Modes
+Shuffle mode
+Loop mode
+Monthly Wrap
+Displays most played songs
+Tracks listening activity
+Output Device Detection
+Phone Speaker
+Wired Headphones
+Bluetooth Devices
+
+Chapter 7: Database Design
+Table Name: plays
+Field Name	Data Type
+track	TEXT
+played_at	TEXT
+The table stores track names and playback timestamps for generating listening statistics.
+
+Chapter 8: Advantages
+Lightweight application
+Minimal user interface
+Easy navigation
+Personalized listening statistics
+Offline functionality
+Low memory consumption
+
+Chapter 9: Applications
+Personal music listening
+Educational demonstration of mobile app development
+Android application development learning
+Music library management
+
+Chapter 10: Future Enhancements
+Playlist creation and management.
+Album artwork support.
+Lyrics synchronization.
+Equalizer integration.
+Cloud synchronization.
+Music recommendation engine.
+Dark and custom themes.
+Sleep timer feature.
+Conclusion
+
+VINYL successfully demonstrates the development of a lightweight Android music player using Python and KivyMD. The application provides essential playback features while maintaining a modern user interface and personalized listening statistics. The project highlights mobile application development concepts, database integration, and multimedia management in Android environments.
+
+References:
+Python Documentation – https://www.python.org
+Kivy Framework Documentation – https://kivy.org
+KivyMD Documentation – https://kivymd.readthedocs.io
+SQLite Documentation – https://sqlite.org
+Android Developer Documentation – https://developer.android.com
